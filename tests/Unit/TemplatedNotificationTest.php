@@ -34,8 +34,8 @@ class TemplatedNotificationTest extends TestCase
         $mock = \Mockery::mock($this->testClassName)->makePartial()->shouldAllowMockingProtectedMethods();
         $mock->shouldReceive('getSetting->via')->andReturn(
             [
-                new NotificationChannel('mail'),
-                new NotificationChannel('database')
+                'mail',
+                'database'
             ]
         );
         $actual = $mock->via($notifiable);

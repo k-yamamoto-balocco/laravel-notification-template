@@ -29,7 +29,7 @@ class DtoObjectsTraitTest extends TestCase
         $stubChannel = \Mockery::mock(NotificationChannel::class);
 
         App::shouldReceive('make')
-            ->with(NotificationChannel::class, ['channel' => $argChannelName])
+            ->with(NotificationChannel::class, ['value' => $argChannelName])
             ->andReturn($stubChannel);
 
         $stubDtoObjects = \Mockery::mock(DtoObjects::class);
