@@ -105,12 +105,12 @@ class TemplatedNotification extends Notification implements ShouldQueue
     protected function decideLocale($notifiable)
     {
         return $this->locale ?? value(
-                function () use ($notifiable) {
-                    if ($notifiable instanceof HasLocalePreference) {
-                        return $notifiable->preferredLocale();
-                    }
+            function () use ($notifiable) {
+                if ($notifiable instanceof HasLocalePreference) {
+                    return $notifiable->preferredLocale();
                 }
-            ) ?? $this->getLaravelCommonConfig()->getAppLocale();
+            }
+        ) ?? $this->getLaravelCommonConfig()->getAppLocale();
     }
 
     /**
@@ -141,6 +141,4 @@ class TemplatedNotification extends Notification implements ShouldQueue
             $notifiable
         );
     }
-
-
 }

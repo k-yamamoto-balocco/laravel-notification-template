@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Drivers\Mail;
 
 use GitBalocco\LaravelNotificationTemplate\Drivers\Mail\Contracts\MailChannelDriver;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Entity\NotificationTemplate;
-
 
 use GitBalocco\LaravelNotificationTemplate\ValueObject\MailFrom;
 use Illuminate\Support\Facades\App;
@@ -45,6 +43,4 @@ class MailSetting extends DefaultSetting
     {
         return $this->subject;
     }
-
-
 }

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\ValueObject;
 
 use stdClass;
@@ -14,5 +13,4 @@ class DtoClassName extends ClassName
         }
         parent::setValue($class);
     }
-
 }

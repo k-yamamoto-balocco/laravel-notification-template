@@ -67,5 +67,4 @@ trait DtoObjectsTrait
     {
         $this->getDtoObjects()->setDtoObjectToLocale($locale, $dtoObject);
     }
-
 }

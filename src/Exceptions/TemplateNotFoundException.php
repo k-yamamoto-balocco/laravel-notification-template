@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Exceptions;
 
 use Exception;
@@ -16,9 +15,7 @@ class TemplateNotFoundException extends Exception
         $code = 0,
         Throwable $previous = null
     ) {
-        $message='NotificationTemplate not found. [channel :'.$channel.'] [locale:'.$locale.'] '.$message;
+        $message = 'NotificationTemplate not found. [channel :' . $channel . '] [locale:' . $locale . '] ' . $message;
         parent::__construct($message, $code, $previous);
     }
-
-
 }

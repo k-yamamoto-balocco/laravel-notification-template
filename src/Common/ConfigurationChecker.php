@@ -1,8 +1,6 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Common;
-
 
 use GitBalocco\LaravelNotificationTemplate\Exceptions\BadConfigurationException;
 use GitBalocco\LaravelNotificationTemplate\ValueObject\NotificationChannel;
@@ -93,5 +91,4 @@ class ConfigurationChecker
         //チャンネルごとのパラメータに今の所必須項目は存在しない。
         //mail の場合必須、などが今後必要になった場合、以下に追記が必要になる可能性もある。
     }
-
 }

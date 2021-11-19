@@ -24,7 +24,7 @@ class MailFrom
             /** @var LaravelCommonConfig $commonConfig */
             $commonConfig = App::make(LaravelCommonConfig::class);
             $this->address = $commonConfig->getMailFromAddress();
-        }else{
+        } else {
             $this->address = App::make(RfcValidMailAddress::class, ['value' => $address]);
         }
 

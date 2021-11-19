@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\ValueObject;
 
 /**
@@ -52,6 +51,4 @@ abstract class StringValue
     {
         return ($this->getValue() === $value);
     }
-
-
 }

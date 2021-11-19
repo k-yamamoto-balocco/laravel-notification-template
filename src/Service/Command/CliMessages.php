@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Service\Command;
 
 use ArrayIterator;
@@ -31,6 +30,4 @@ class CliMessages implements IteratorAggregate
     {
         return new ArrayIterator($this->messages);
     }
-
-
 }

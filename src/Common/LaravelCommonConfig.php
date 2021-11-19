@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Common;
 
 use GitBalocco\LaravelNotificationTemplate\ValueObject\RfcValidMailAddress;
@@ -69,5 +68,4 @@ class LaravelCommonConfig
     {
         return config_path($path);
     }
-
 }

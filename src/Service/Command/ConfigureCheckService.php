@@ -1,8 +1,6 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Service\Command;
-
 
 use Exception;
 use GitBalocco\LaravelNotificationTemplate\Common\ArrayDirectProduct;
@@ -283,5 +281,4 @@ class ConfigureCheckService
         }
         return $this->laravelConfig;
     }
-
 }

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Entity;
-
 
 use GitBalocco\LaravelNotificationTemplate\Common\ConfigurationChecker;
 use GitBalocco\LaravelNotificationTemplate\Entity\Contracts\NotificationTemplate;
@@ -45,7 +43,8 @@ class NotificationSetting
         foreach ($row['notification_templates'] as $templatesSetting) {
             /** @var NotificationChannel $channel */
             $channel = App::make(NotificationChannel::class, ['value' => $templatesSetting['channel']]);
-            $this->templates[] = $channel->notificationTemplateObject($templatesSetting);;
+            $this->templates[] = $channel->notificationTemplateObject($templatesSetting);
+            ;
         }
     }
 
@@ -73,8 +72,6 @@ class NotificationSetting
         }
 
         return array_values($result);
-
-
     }
 
     /**
@@ -163,12 +160,14 @@ class NotificationSetting
         return collect($this->getTemplates())
             ->pluck('locale')
             ->unique()
-            ->reject(function($name){return empty($name);})
+            ->reject(function ($name) {
+                return empty($name);
+            })
             ->values()
             ->toArray();
     }
 
-    public function combination(){
-
+    public function combination()
+    {
     }
 }

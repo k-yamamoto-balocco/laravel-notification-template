@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Entity\NotificationTemplate;
 
 use GitBalocco\LaravelNotificationTemplate\Drivers\Contracts\ChannelDriver;
@@ -120,5 +119,4 @@ class DefaultSetting extends ReadOnlyObject implements NotificationTemplate
     {
         return $this->locale;
     }
-
 }

@@ -63,5 +63,4 @@ class NotificationChannel extends StringValue
         }
         $this->value = $value;
     }
-
 }

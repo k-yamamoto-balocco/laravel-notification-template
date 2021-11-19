@@ -24,8 +24,6 @@ class RfcValidMailAddress extends StringValue
     {
         $this->validator = App::make(EmailValidator::class);
         parent::__construct($value);
-
-
     }
 
     /**

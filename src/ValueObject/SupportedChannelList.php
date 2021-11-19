@@ -15,7 +15,6 @@ use GitBalocco\LaravelNotificationTemplate\Drivers\Mail\Mail;
 use GitBalocco\LaravelNotificationTemplate\Entity\NotificationTemplate\DefaultSetting;
 use GitBalocco\LaravelNotificationTemplate\Entity\NotificationTemplate\MailSetting;
 
-
 /**
  * Class SupportedChannelList
  * @package GitBalocco\LaravelNotificationTemplate\Entity
@@ -91,5 +90,4 @@ class SupportedChannelList extends LaravelCacheClassification implements BehaveA
     {
         return 'name';
     }
-
 }

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\ValueObject;
-
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\Facades\App;

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Service\Command;
 
 /**
@@ -40,6 +39,4 @@ class CliMessage
     {
         return $this->message;
     }
-
-
 }

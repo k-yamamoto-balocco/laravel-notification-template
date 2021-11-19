@@ -1,8 +1,6 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Command;
-
 
 use Exception;
 use GitBalocco\LaravelNotificationTemplate\Service\Command\CliMessage;
@@ -95,5 +93,4 @@ class ConfigurationCheck extends Command
             $this->$statusName($cliMessage->getMessage());
         }
     }
-
 }

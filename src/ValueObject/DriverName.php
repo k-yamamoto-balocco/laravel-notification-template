@@ -36,12 +36,11 @@ class DriverName extends ClassName
 
         $interface = $this->channel->driverInterfaceName();
         if (!is_a($class, $interface, true)) {
-            $message = 'Driver for "' . (string)$this->channel . '" channel must implements interface ' . $interface.'. ';
-            $message .= 'Actually specified class is :'.$class;
+            $message = 'Driver for "' . (string)$this->channel .
+                '" channel must implements interface ' . $interface . '. ';
+            $message .= 'Actually specified class is :' . $class;
             throw new InvalidArgumentException($message);
         }
         parent::setValue($class);
     }
-
-
 }

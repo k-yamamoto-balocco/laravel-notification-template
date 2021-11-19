@@ -1,6 +1,5 @@
 <?php
 
-
 namespace GitBalocco\LaravelNotificationTemplate\Entity;
 
 use GitBalocco\LaravelNotificationTemplate\Exceptions\DtoMismatchException;
