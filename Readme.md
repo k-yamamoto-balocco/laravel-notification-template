@@ -249,5 +249,3 @@ driverクラスを作成したら、設定ファイルの driver 項目に、ク
 'driver' => \Namespace\Of\Each\Project\CustomDatabaseDriver::class,
 ```
 
-
-
