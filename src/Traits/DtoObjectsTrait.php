@@ -21,7 +21,7 @@ trait DtoObjectsTrait
      */
     public function assign($dtoObject, string $channelName, string $locale): void
     {
-        $notificationChannel = App::make(NotificationChannel::class, ['channel' => $channelName]);
+        $notificationChannel = App::make(NotificationChannel::class, ['value' => $channelName]);
         $this->getDtoObjects()->setDtoObject($notificationChannel, $locale, $dtoObject);
     }
 

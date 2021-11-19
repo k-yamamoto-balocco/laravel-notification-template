@@ -56,7 +56,7 @@ class TemplatedNotification extends Notification implements ShouldQueue
         $result = [];
         //settingで定義されている情報から、自動的にチャンネルを決定する
         foreach ($this->getSetting()->via() as $channel) {
-            $result[] = $channel->getValue();
+            $result[] = $channel;
         }
         return $result;
     }
