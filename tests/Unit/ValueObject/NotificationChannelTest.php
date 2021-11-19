@@ -109,7 +109,7 @@ class NotificationChannelTest extends TestCase
 
         App::shouldReceive('make')
             ->with(SupportedChannelList::class)
-            ->twice()
+            ->once()
             ->andReturn($stubList);
 
         App::shouldReceive('make')
