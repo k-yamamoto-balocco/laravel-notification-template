@@ -86,7 +86,7 @@ class DtoObjectsTraitTest extends TestCase
             ->once();
 
         App::shouldReceive('make')
-            ->with(NotificationChannel::class, ['channel' => $argChannelName])
+            ->with(NotificationChannel::class, ['value' => $argChannelName])
             ->andReturn($stubChannel);
 
         //テスト対象メソッドの実行

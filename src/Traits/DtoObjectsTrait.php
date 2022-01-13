@@ -52,7 +52,7 @@ trait DtoObjectsTrait
     public function assignToChannel($dtoObject, string $channelName): void
     {
         /** @var NotificationChannel $notificationChannel */
-        $notificationChannel = App::make(NotificationChannel::class, ['channel' => $channelName]);
+        $notificationChannel = App::make(NotificationChannel::class, ['value' => $channelName]);
 
         $this->getDtoObjects()->setDtoObjectToChannel($notificationChannel, $dtoObject);
     }
